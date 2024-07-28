@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css?family=Kodchasan');
+
+/* Reset styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kodchasan', sans-serif;
+}
+  
+
+.BG{
+    background: linear-gradient(90deg, rgba(253,66,83,1) 0%, rgba(0,47,65,1) 100%);
+    background-size:cover;
+    background-position:center;
+    flex:1;
+    padding:1rem;
+    height: 95%;
+}
+  
+.column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 50px;
+    padding: 18px;
+}
+ 
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+}
+  
+.container {
+    padding: 0 16px;
+    margin-bottom: 10px;
+    color: white;
+}
+  
+.container::after,
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/*our team button */
+.about {
+    width: 100%;
+    height: 300px;
+    background-color: white;
+}
+  
+.frame {
+    width: 90%;
+    margin: 55px auto;
+    text-align: center;
+}
+  
+.custom-btn {
+    width: 230px;
+    height: 140px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-size: large;
+    background: transparent;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+      7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+  
+/* 12 */
+.btn-12 {
+    position: relative;
+    right: 50px;
+    bottom: 20px;
+    border: none;
+    box-shadow: none;
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    -webkit-perspective: 230px;
+    perspective: 230px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+  
+.btn-12 span {
+    background: rgb(0, 172, 238);
+    background: linear-gradient(
+      0deg,
+      rgba(0, 172, 238, 1) 0%,
+      rgba(2, 126, 251, 1) 100%
+    );
+    display: block;
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+      7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin: 0;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.btn-12 span:nth-child(1) {
+    box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9,
+      7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
+    -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+    -webkit-transform-origin: 50% 50% -20px;
+    -moz-transform-origin: 50% 50% -20px;
+    transform-origin: 50% 50% -20px;
+}
+
+.btn-12 span:nth-child(2) {
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transform-origin: 50% 50% -20px;
+    -moz-transform-origin: 50% 50% -20px;
+    transform-origin: 50% 50% -20px;
+}
+
+.btn-12:hover span:nth-child(1) {
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+      7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+}
+
+.btn-12:hover span:nth-child(2) {
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+      7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+    color: transparent;
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+}
+
+
+#panel,
+#flip {
+    padding: 5px;
+    text-align: center;
+    color: white;
+    background-color:rgba(0, 172, 238, 1);
+    border: solid 1px #ffffff;
+    cursor: pointer;
+}
+
+#panel,
+#flip:hover{
+    background: rgba(2, 126, 251, 1);
+}
+  
+#panel {
+    padding: 50px;
+    margin-bottom: 50px;
+    display: none;
+}
+
+#flip {
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+
+.textAboutGame{
+    text-align: justify;
+    font-size: 23px;
+    line-height: 1.6;
+    color: white;
+}
+
+.ju{
+  text-align: left;
+  font-size: 23px;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.aboutMiniMax {
+    text-align: justify;
+    font-size: 23px;
+    line-height: 1.6;
+    color: white;
+}
+
+.img1{
+    width: 100%;
+}
+
+.playButton{
+  font-size: 40px;
+  position: relative;
+  right: -408px;
+  color: white;
+  top: -12px;
+}
